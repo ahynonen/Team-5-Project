@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "robot", sans-serif;
+    }
+    
+    header {
+      background-color: #e4dfda;
+      width: 100%;
+      height: 90px;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+    }
+    .logo {
+      width: 150px;
+    }
+    
+    .navigation a {
+      color: rgb(39, 39, 39);
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 900;
+      padding-left: 50px;
+    }
+    
+    .navigation a:hover {
+      color: rgb(46, 102, 255);
+    }
+    
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    
+    ::selection {
+      background: #080708;
+      color: #fff;
+    }
+    
+    body {
+      display: grid;
+      height: 100%;
+      place-items: center;
+      background: #0d1321;
+      min-height: 100vh;
+    }
+    
+    .title h1{
+      color: white;
+      align-items: center;
+      position: relative;
+      top: 50px;
+      font-family: 'Robsoto', sans-serif;
+    }
+    
+    
+    .container {
+      max-width: 1100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 82px;
+    }
+    .container .box {
+      width: calc(33% - 10px);
+      background: #e4dfda;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 30px;
+      border-radius: 5px;
+    }
+    .box .quote i {
+      margin-top: 10px;
+      font-size: 45px;
+      color: #17c0eb;
+    }
+    .container .box .image {
+      margin: 10px 0;
+      height: 150px;
+      width: 150px;
+      background: #2d294e;
+      padding: 3px;
+      border-radius: 50%;
+    }
+    .box .image img {
+      height: 100%;
+      width: 100%;
+      border-radius: 80%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+    .box p {
+      text-align: justify;
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .box .name_job {
+      margin: 10px 0 3px 0;
+      color: #240c8d;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 1045px) {
+      .container .box {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 710px) {
+      .container .box {
+        width: 100%;
+      }
+    }
+    
+    footer {
+      background-color: #e4dfda;
+      width: 100%;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .address {
+      right: 300px;
+      position: relative;
+    }
+    .address p {
+      font-family: "robot", sans-serif;
+      font-size: 1em;
+      line-height: 20px;
+      color: rgb(26, 21, 63);
+    }
+    
+    .hamk {
+      font-size: 30px;
+      color: #240c8d;
+    }
+    
+    .social-media {
+      left: 300px;
+      position: relative;
+      padding: 0px;
+    }
+    
+    
+    
+    .fa-facebook {
+      position: relative;
+      margin: 0 14px;
+      font-size: 30px;
+      color: rgb(51, 98, 185);
+    }
+    
+    .fa-facebook :hover{
+      color: rgb(255, 24, 24);
+    }
+    
+    .fa-linkedin {
+      position: relative;
+      margin: 0 14px;
+      font-size: 30px;
+      color: rgb(0,119,181);
+    }
+    
+    .fa-instagram {
+      position: relative;
+      margin: 0 14px;
+      font-size: 30px;
+      color: rgb(221, 42, 123);
+    }
+    
+    .fa-twitter {
+      position: relative;
+      margin: 0 14px;
+      font-size: 30px;
+      color: rgb(8,160,233);
+    }
+    
+    .fa-youtube {
+      position: relative;
+      margin: 0 14px;
+      font-size: 30px;
+      color: rgb(230,33,23);
+    }
+  </style>
+
+    
+  </head>
+  <body>
+    <!--nav-bar-->
+    <header>
+      <a href="homepage.html"><img class="logo" src="images/AMW.svg" alt="logo" /></a>
+<nav class="navigation">
+         <a href="homepage.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>    </nav>
+
+          </header>
+    <!--container-->
+    <div class="title">
+      <h1> PROJECT  MADE BY</h1>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="image">
+          <img src="images/mehdi.jpg" alt="Mehdi" />
+        </div>
+        <div class="name_job">Mehdi Naciri</div>
+        <p>
+          Lorem ipsum dolor sitamet, stphen hawkin so adipisicing elit. Ratione
+          disuja doloremque reem ipsum dolor sitamet, stphen hawkin so
+          adipisicing elit. Ratione disuja doloremque reiciendi nemo.em ipsum
+          dolor sitamet, stphen hawkin so adipisicing elit. Ratione disuja
+          doloremque reiciendi nemo.em ipsum dolor sitamet, stphen hawkin so
+          adipisicing elit. Ratione disuja doloremque reiciendi nemo.iciendi
+          nemo.
+        </p> 
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="images/anika.jpg" alt="anika" />
+        </div>
+        <div class="name_job">Anika HynÃ¶nen</div>
+        <p>
+          Lorem ipsum dolor sitamet, stphen hawkin so adipisicing elit. Ratione
+          disuja doloremque em ipsum dolor sitamet, stphen hawkin so adipisicing
+          elit. Ratione disuja doloremque reiciendi nemo.em ipsum dolor sitamet,
+          stphen hawkin so adipisicing elit. Ratione disuja doloremque reiciendi
+          nemo.em ipsum dolor sitamet, stphen hawkin so adipisicing elit.
+          Ratione disuja doloremque reiciendi nemo.reiciendi nemo.
+        </p>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="images/wafa.jpg" alt="wafa" />
+        </div>
+        <div class="name_job">Wafa Faquir</div>
+        <p>
+          Lorem ipsum dolor sitamet, stphen hawkin so adipisicing elit. Ratione
+          disuja doloremque em ipsum dolor sitamet, stphen hawkin so adipisicing
+          elit. ne disuja doloremque reiciendi nemo.em ipsum dolor sitamet,
+          stphen hawkin so adipisicing elit. Ratione disuja doloremque reiciendi
+          nemo.em ipsum dolor sitamet, stphen hawkin so adipisicing elit.
+          Ratione disuja doloremque reiciendi nemo.reiciendi nemo.
+        </p>
+      </div>
+    </div>
+
+    <!--footer-->
+
+    <footer>
+      <div class="address">
+        <p><b>HÃ¤meen ammattikorkeakoulu HAMK </b></p>
+        <p class="hamk"><b>PL 230 13101 HÃ¤meenlinna</b></p>
+      </div>
+
+      <div class="social-media">
+        
+          <a href="https://www.facebook.com/hamkuas" target="_blank">
+          <i class="fab fa-facebook"></i></a>
+           <a href="https://www.instagram.com/hamk_uas/" target="_blank"> <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/school/hamk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/HAMK_UAS" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/user/HAMKuas" target="_blank"><i class="fab fa-youtube"></i></a>
+        
+      </div>
+    </footer>
+  </body>
+</html>
