@@ -10,8 +10,8 @@
     />
     
     
-    <link rel="stylesheet" href="css/signup.css"/>
-    <link rel="stylesheet" href="css/css.css"/>
+    <link rel="stylesheet" href="signup/css/signup.css"/>
+    <link rel="stylesheet" href="signup/css/css.css"/>
 </head>
 <body>
 <!--nav-bar-->
