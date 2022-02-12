@@ -5,6 +5,11 @@
     font-family: "robot", sans-serif;
   }
   
+ html, body {
+    height: 99.9vh;
+    margin: 0;
+    padding: 0;
+  }
 
   header {
     background-color: #e4dfda;
