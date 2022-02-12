@@ -9,8 +9,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>Project</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/homepage.css"/>
+    <link rel="stylesheet" href="css/css.css"/>
 </head>
 <body>
 <!--nav-bar-->
