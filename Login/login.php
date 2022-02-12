@@ -1,9 +1,9 @@
 <?php
-include_once 'header.php';
+include_once 'Header.php';
 ?>
 
 <div class="container">
-	<div class="header">
+	<div class="Header">
 		<h2>Create Account</h2>
 	</div>
 	<form id="form" class="form" action="create.php" method="post">
@@ -48,5 +48,5 @@ include_once 'header.php';
 
 
     <?php
-include_once 'footer.php';
+include_once 'Footer.php';
 ?>
