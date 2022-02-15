@@ -5,18 +5,15 @@
 
 .container {
 	background-color: #e4dfda;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 	width: 400px;
 	max-width: 100%;
     position: relative;
     left: 40%;
 	align-items: center;
-    height: 100%;
-    padding: 90px;
 }
-
-
 
 
 .header {

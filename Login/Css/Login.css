@@ -11,6 +11,7 @@ body {
     background-color: #344a72;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+   
     
   }
   
@@ -19,9 +20,9 @@ html, body {
     height: 99.9vh;
 }
 
-
 body {
     font-family: "robot", sans-serif;
+    color: #C2DBFE;
     background: #0d1321;
     
     
@@ -42,7 +43,7 @@ header {
 }
 
 .logo-image {
-    width: 100px;
+    width: 150px;
     object-fit: contain;
 }
 
@@ -138,7 +139,6 @@ footer {
     min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .titles {
@@ -146,7 +146,7 @@ footer {
 }
 
 .titles > h1 {
-    color: #080603;
+    color: #E4DFDA;
     font-size: 50px;
     margin-bottom: 0.3em;
 }
@@ -156,6 +156,10 @@ footer {
     font-size: 20px;
 }
 
+/*.content > .big-logo {
+    height: 35%;
+    margin: 0 10%;
+} */
 .big-div-logo{
     align-self: center;
 	display: grid;
