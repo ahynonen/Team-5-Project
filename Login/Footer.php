@@ -1,4 +1,3 @@
-</div>
 <footer>
     <div class="address">
         <p><b>Hämeen ammattikorkeakoulu HAMK </b></p>
@@ -6,14 +5,12 @@
     </div>
 
     <div class="social-media">
-        <ul>
+        <div>
             <i class="fab fa-facebook"></i>
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-youtube"></i>
-        </ul>
+        </div>
     </div>
 </footer>
-</body>
-</html>

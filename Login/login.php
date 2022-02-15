@@ -1,34 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Project</title>
+    <link rel="stylesheet" href="Css/Login.css"/>
+</head>
+
+<body>
 <?php
 include 'Header.php';
 ?>
 
-<div class="container">
-	<div class="Header">
-		<h2>LOG IN</h2>
-	</div>
-	
-    
-    <div class="form-control">
-			<label for="email">Email</label>
-			<input type="email" placeholder="" name="email" />
-			<i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
-			<small>Error message</small>
-		</div>
-		<div class="form-control">
-			<label for="pwd">Password</label>
-			<input type="password" placeholder=""  name="pwd"/>
-			<i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
-			<small>Error message</small>
-		</div>
-		
-		<button>Login</button>
-	</form>
-	
+<div class="main">
+    <div class="container">
+        <div class="Header">
+            <h2>LOG IN</h2>
+        </div>
+        <form class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="" name="email"/>
+            <small>Error message</small>
+            <div class="form-control">
+                <label for="pwd">Password</label>
+                <input id="pwd" type="password" placeholder="" name="pwd"/>
+                <small>Error message</small>
+            </div>
+
+            <button>Login</button>
+        </form>
+
+    </div>
+
+	<?php
+	include 'Footer.php';
+	?>
 </div>
 
-
-    <?php
-include 'Footer.php';
-?>
+</body>
+</html>
