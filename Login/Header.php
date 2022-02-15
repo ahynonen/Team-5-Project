@@ -10,7 +10,6 @@
     />
     <title>Project</title>
      <link rel="stylesheet" href="Css/Login.css"/>
-    <link rel="stylesheet" href="Css/Css.css"/>
 </head>
 <body>
 
