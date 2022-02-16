@@ -32,6 +32,7 @@ include 'Header.php';
                 <small>Error message</small>
             </div>
 
+			
             <button>Login</button>
         </form>
 
@@ -44,3 +45,32 @@ include 'Header.php';
 
 </body>
 </html>
+
+<?php
+$email = "";
+$pwd= "";
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
+}
+  if (empty($_POST["pwd"])) {
+    $nameErr = "Password is required";
+  } else {
+    $name = test_input($_POST["pwd"]);
+  }
+  
+  
+ECHO "<h2>Your Input:</h2>";
+ECHO $email;
+ECHO "<br>";
+ECHO $pwd;
+ECHO "<br>";
+
+?>
