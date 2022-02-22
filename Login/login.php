@@ -52,8 +52,8 @@ $conn->close();
             <input id="email" type="email" placeholder="" name="email"/>
             <small>Error message</small>
             <div class="form-control">
-                <label for="pwd">Password</label>
-                <input id="pwd" type="password" placeholder="" name="pwd"/>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="" name="password"/>
                 <small>Error message</small>
             </div>
 
@@ -73,7 +73,7 @@ $conn->close();
 
 <?php
 $email = "";
-$pwd= "";
+$password= "";
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST["email"])) {
     $emailErr = "Email is required";
@@ -85,17 +85,17 @@ $pwd= "";
     }
   }
 }
-  if (empty($_POST["pwd"])) {
+  if (empty($_POST["password"])) {
     $nameErr = "Password is required";
   } else {
-    $name = test_input($_POST["pwd"]);
+    $name = test_input($_POST["password"]);
   }
   
   
 ECHO "<h2>Your Input:</h2>";
 ECHO $email;
 ECHO "<br>";
-ECHO $pwd;
+ECHO $password;
 ECHO "<br>";
 
 ?>
