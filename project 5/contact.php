@@ -14,7 +14,7 @@
   <body>
     <!--nav-bar-->
     <?php
-include_once 'Header.php';
+include 'Header.php';
 ?>
 
    
