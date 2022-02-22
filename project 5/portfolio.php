@@ -214,15 +214,10 @@
   </head>
   <body>
     <!--nav-bar-->
-    <header>
-      <a href="index.html"><img class="logo" src="images/AMW.png" alt="Logo" /></a>
-<nav class="navigation">
-  <a href="index.html">Home</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-  <a href="signup.php">Sign up</a>
-  <a href="login.php">Login</a>
-          </header>
+    <?php
+include_once 'Header.php';
+?>
+
     <!--container-->
     <div class="title">
       <h1> PROJECT  MADE BY</h1>

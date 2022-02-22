@@ -179,16 +179,10 @@
   </head>
   <body>
     <!--nav-bar-->
-    <header>
-      <a href="index.html"><img class="logo" src= "images/AMW.svg" alt="logo" /></a>
-      <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        <a href="signup.php">Sign up</a>
-        <a href="login.php">Login</a>
+    <?php
+include_once 'Header.php';
+?>
 
-    </header>
    
     <h1>CONTACT </h1>
 
