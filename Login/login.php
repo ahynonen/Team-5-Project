@@ -15,23 +15,22 @@
 <body>
 <?php
 include 'Header.php';
-include 'db.php';
+/*include 'db.php';
 $email= $_POST['email'];
-$pwd= $_POST['pwd'];
+$password= $_POST['password'];
 
 if (empty($_POST['email'])) {
     echo "<h1>Please input your Email Address</h1>";
 } 
-if (empty($_POST['pwd'])) {
+if (empty($_POST['password'])) {
     echo "<h1>Please input your Password</h1>";
 } 
     else {
-$sql="insert into users (fname, lname, email, pwd)
-values('$userID', '$email', '$pwd')";
+$sql="insert into users (userID, email, password)
+values('$userID', '$email', '$password')";
 
 if($conn->query($sql) === TRUE) {
     echo "New connexion ";
-    echo "<a href='login.php?' class='top'>Login </a>";
 }
 else
 {
@@ -41,7 +40,8 @@ $conn->close();
 
 }
 ?>
-
+*/
+?>
 <div class="main">
     <div class="container">
         <div class="Header">
