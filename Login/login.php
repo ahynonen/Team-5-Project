@@ -16,7 +16,6 @@
 <?php
 include 'Header.php';
 include 'db.php';
-include 'db.php';
 $email= $_POST['email'];
 $pwd= $_POST['pwd'];
 
