@@ -58,7 +58,16 @@ $conn->close();
             </div>
 
 			
-            <button>Login</button>
+             <button onclick="myFunction()">Login</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You will logged in now";
+}
+</script>
+</button>
         </form>
 
     </div>
