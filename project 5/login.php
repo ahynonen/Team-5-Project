@@ -1,3 +1,4 @@
+<?php include('loginserver.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,64 +14,36 @@
 </head>
 
 <body>
-<?php
-include 'Header.php';
-?>
+<?php include 'header.php' ?>
+
 
 <div class="main">
     <div class="container">
         <div class="Header">
             <h2>LOG IN</h2>
         </div>
-        <form class="form-control">
+        <form class="form-control" action="login.php" method="post">
             <label for="email">Email</label>
             <input id="email" type="email" placeholder="" name="email"/>
             <small>Error message</small>
             <div class="form-control">
-                <label for="pwd">Password</label>
-                <input id="pwd" type="password" placeholder="" name="pwd"/>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="" name="password"/>
                 <small>Error message</small>
             </div>
-
-			
-            <button>Login</button>
+             <button onclick="myFunction()">Login</button>
+			 <p id="demo"></p>
         </form>
-
     </div>
 
-	<?php
-	include 'Footer.php';
-	?>
-</div>
+	<?php include 'Footer.php';?>
 
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You will log in now";
+}
+</script>
 </body>
 </html>
 
-<?php
-$email = "";
-$pwd= "";
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-}
-  if (empty($_POST["pwd"])) {
-    $nameErr = "Password is required";
-  } else {
-    $name = test_input($_POST["pwd"]);
-  }
-  
-  
-ECHO "<h2>Your Input:</h2>";
-ECHO $email;
-ECHO "<br>";
-ECHO $pwd;
-ECHO "<br>";
-
-?>
+<!--  -->

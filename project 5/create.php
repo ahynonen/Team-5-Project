@@ -8,11 +8,11 @@ $pwd= $_POST['pwd'];
 if (empty($_POST['email'])) {
     echo "<h1>Please input your Email Address</h1>";
 } 
-if (empty($_POST['pwd'])) {
+else if (empty($_POST['pwd'])) {
     echo "<h1>Please input your Password</h1>";
 }
     else {
-$sql="insert into users (fname, lname, email, pwd)
+$sql="insert into signup (fname, lname, email, password)
 values('$fname', '$lname', '$email', '$pwd')";
 
 if($conn->query($sql) === TRUE) {
