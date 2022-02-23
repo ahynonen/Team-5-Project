@@ -24,6 +24,11 @@ include_once 'Header.php';
         <h3>we are happy to have you here :)</h3>
     </div>
     <div class="div-big-logo"><img class="big-logo" src="images/AMW-white.png" alt="AMW White logo"></div>
+    <button onclick="myFunction()">Login</button>
+    <script>
+       function myFunction() {
+       document.getElementById("demo").innerHTML = "You will log in now";
+}
 </div>
 <?php
 	include 'Footer.php';
