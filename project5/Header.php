@@ -4,6 +4,7 @@
         <a href="index.php">Home</a>
         <a href="portfolio.php">Portfolio</a>
         <a href="contact.php">Contact</a>
+        <a href="profile.php">My Profile</a>
         <a href="signup.php">Sign up</a>
         <a href="login.php">Login</a>
     </nav>

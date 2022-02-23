@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="profile.css"/>
 </head>
 <?php
-include 'header.php'; ?>
+include 'Header.php'; ?>
 
 
 
@@ -36,4 +36,4 @@ include 'header.php'; ?>
 </div>
 
 <?php
-include 'footer.php' ?>
+include 'Footer.php' ?>
