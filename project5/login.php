@@ -36,10 +36,7 @@ session_start();
 			 <p id="demo"></p>
 
         </form>
-    </div>
-
-	<?php 
-    include 'Footer.php';
+        <?php 
 
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
@@ -50,14 +47,19 @@ session_start();
         if($count == 1) {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            echo '<a href="afterlogin.php"><button>go to your login page </button></a>';
-            exit();
+            echo '<a href="afterlogin.php"><button>go to your welcome page </button></a>';
+            //exit();
         }else {
             echo "<script> alert('Password or email wrong, please try again.')</script>";
         }
     }
 
     ?>
+    </div>
+    <?php 
+    include 'Footer.php';
+    ?>
+	
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "You will log in now";
