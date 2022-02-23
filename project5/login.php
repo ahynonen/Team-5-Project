@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php include 'header.php' ?>
+<?php include 'Header.php' ?>
 
 
 <div class="main">
@@ -33,10 +33,14 @@
             </div>
              <button onclick="myFunction()">Login</button>
 			 <p id="demo"></p>
+
         </form>
     </div>
 
-	<?php include 'Footer.php';?>
+	<?php 
+    include 'Footer.php';
+
+    ?>
 
 <script>
 function myFunction() {
@@ -45,5 +49,3 @@ function myFunction() {
 </script>
 </body>
 </html>
-
-<!--  -->

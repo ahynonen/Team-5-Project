@@ -3,7 +3,7 @@
 $servername ="db";
 $username= "root";
 $password ="password";
-$dbname = "AMW";
+$dbname = "amw";
 
  //creating connection
 
@@ -14,6 +14,5 @@ $dbname = "AMW";
 
  if ($conn -> connect_error)
  die ("Connection failed ". $conn->connect_error);
-
 
 ?>
