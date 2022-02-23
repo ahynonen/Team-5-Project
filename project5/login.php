@@ -39,8 +39,9 @@ session_start();
     </div>
 
 	<?php 
-    
-    
+    include 'Footer.php';
+
+    session_start();
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
