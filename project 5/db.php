@@ -3,7 +3,7 @@
 $servername ="db";
 $username= "root";
 $password ="password";
-$dbname = "signup";
+$dbname = "AMW";
 
  //creating connection
 
