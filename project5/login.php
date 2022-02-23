@@ -1,4 +1,4 @@
-<?php include('db.php'); 
+<?php include 'db.php'; 
 session_start();
 ?>
 <!DOCTYPE html>
@@ -50,14 +50,14 @@ session_start();
         if($count == 1) {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            echo '<a href="afterlogin.php"><button>go to your login page</button></a>';
+            echo '<a href="afterlogin.php"><button>go to your login page </button></a>';
             exit();
         }else {
             echo "Password or email wrong, please try again.";
         }
     }
-    ?>
 
+    ?>
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "You will log in now";
