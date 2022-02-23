@@ -1,4 +1,4 @@
-<?php include('loginserver.php'); ?>
+<?php include('db.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +16,12 @@
 <body>
 <?php include 'Header.php' ?>
 
-
 <div class="main">
     <div class="container">
         <div class="Header">
             <h2>LOG IN</h2>
         </div>
-        <form class="form-control" action="login.php" method="post">
+        <form class="form-control" action="index.php" method="post">
             <label for="email">Email</label>
             <input id="email" type="email" placeholder="" name="email"/>
             <small>Error message</small>
@@ -39,7 +38,22 @@
 
 	<?php 
     include 'Footer.php';
-
+    session_start();
+    if (isset($_POST['email'])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $sql = "SELECT userID FROM users WHERE email = '$email' and password = '$password'";
+        $result = $conn->query($sql);
+        $count = mysqli_num_rows($result);
+        if($count == 1) {
+            $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            header("location:afterlogin.php");
+            exit();
+        }else {
+            echo "Password or email wrong, please try again.";
+        }
+    }
     ?>
 
 <script>

@@ -12,8 +12,8 @@ else if (empty($_POST['pwd'])) {
     echo "<h1>Please input your Password</h1>";
 }
     else {
-$sql="insert into signup (fname, lname, email, password)
-values('$fname', '$lname', '$email', '$pwd')";
+$sql="insert into users (fname, lname, email, password)
+values('$fname', '$lname', '$email', '$password')";
 
 if($conn->query($sql) === TRUE) {
     echo "New record added";
