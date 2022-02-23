@@ -27,7 +27,7 @@ include_once 'Header.php';
     <button onclick="myFunction()">Login</button>
     <script>
        function myFunction() {
-       document.getElementById("demo").innerHTML = "You will log in now";
+       document.getElementById("demo").innerHTML = "Yey!";
 }
 </div>
 <?php
