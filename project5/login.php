@@ -47,16 +47,18 @@ session_start();
         $sql = "SELECT userID FROM users WHERE email = '$email' and password = '$password'";
         $result = $conn->query($sql);
         $count = mysqli_num_rows($result);
+        echo $count;
         if($count == 1) {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            echo '<a href="afterlogin.php"><button>go to your login page </button></a>';
+            echo '<a href="afterlogin.php"><button>go to your login page</button></a>';
             exit();
         }else {
-            echo "<script> alert('Password or email wrong, please try again.')</script>";
+            echo "Password or email wrong, please try again.";
         }
     }
 
+    include 'Footer.php';
     ?>
 <script>
 function myFunction() {

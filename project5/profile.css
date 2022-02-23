@@ -10,6 +10,9 @@
 	align-items: center;
 }
 
+h1 {
+  color: snow;
+}
 h2 {
     text-align: left;
 }
@@ -67,6 +70,7 @@ h2 {
     flex-wrap: wrap;
     padding: 82px;
 }
+
   footer {
     background-color: #e4dfda;
     width: 100%;
