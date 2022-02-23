@@ -15,33 +15,8 @@
 <body>
 <?php
 include 'Header.php';
-/*include 'db.php';
-$email= $_POST['email'];
-$password= $_POST['password'];
-
-if (empty($_POST['email'])) {
-    echo "<h1>Please input your Email Address</h1>";
-} 
-if (empty($_POST['password'])) {
-    echo "<h1>Please input your Password</h1>";
-} 
-    else {
-$sql="insert into users (userID, email, password)
-values('$userID', '$email', '$password')";
-
-if($conn->query($sql) === TRUE) {
-    echo "New connexion ";
-}
-else
-{
-    echo "ERROR: " .$sql. "<br>" . $conn->error;
-}
-$conn->close();
-
-}
 ?>
-*/
-?>
+
 <div class="main">
     <div class="container">
         <div class="Header">
@@ -52,22 +27,13 @@ $conn->close();
             <input id="email" type="email" placeholder="" name="email"/>
             <small>Error message</small>
             <div class="form-control">
-                <label for="password">Password</label>
-                <input id="password" type="password" placeholder="" name="password"/>
+                <label for="pwd">Password</label>
+                <input id="pwd" type="password" placeholder="" name="pwd"/>
                 <small>Error message</small>
             </div>
 
 			
-             <button onclick="myFunction()">Login</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "You will logged in now";
-}
-</script>
-</button>
+            <button>Login</button>
         </form>
 
     </div>
@@ -82,7 +48,7 @@ function myFunction() {
 
 <?php
 $email = "";
-$password= "";
+$pwd= "";
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST["email"])) {
     $emailErr = "Email is required";
@@ -94,17 +60,17 @@ $password= "";
     }
   }
 }
-  if (empty($_POST["password"])) {
+  if (empty($_POST["pwd"])) {
     $nameErr = "Password is required";
   } else {
-    $name = test_input($_POST["password"]);
+    $name = test_input($_POST["pwd"]);
   }
   
   
 ECHO "<h2>Your Input:</h2>";
 ECHO $email;
 ECHO "<br>";
-ECHO $password;
+ECHO $pwd;
 ECHO "<br>";
 
 ?>
