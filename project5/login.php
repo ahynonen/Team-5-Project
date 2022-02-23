@@ -53,7 +53,7 @@ session_start();
             echo '<a href="afterlogin.php"><button>go to your login page </button></a>';
             exit();
         }else {
-            echo "Password or email wrong, please try again.";
+            echo "<script> alert('Password or email wrong, please try again.')</script>";
         }
     }
 
