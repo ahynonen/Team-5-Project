@@ -1,4 +1,4 @@
-<?php include('db.php'); ?>
+<?php include('loginserver.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +21,7 @@
         <div class="Header">
             <h2>LOG IN</h2>
         </div>
-        <form class="form-control" action="index.php" method="post">
+        <form class="form-control" action="afterlogin.php" method="post">
             <label for="email">Email</label>
             <input id="email" type="email" placeholder="" name="email"/>
             <small>Error message</small>
@@ -38,6 +38,7 @@
 
 	<?php 
     include 'Footer.php';
+
     session_start();
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
