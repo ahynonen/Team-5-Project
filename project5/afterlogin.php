@@ -11,10 +11,32 @@
     <link rel="stylesheet" href="homepage.css" />
 </head>
 
-<body>
-
+<body>  
+</script>  
+                            <h2>SIGN UP FOR NEWSLETTER</h2> 
+                            <form class="input-group" name= Newsletter method = "post" action="#" onsubmit="return validateemail();"> 
+                            <label >Email</label> 
+                          <input type="email" class="form-control form-control-sm" placeholder="Enter your email..." name="email" aria-label="Your email" aria-describedby="basic-addon2"> 
+ 
+                                <div class="input-group-append"> 
+                                  <button class="btn btn-sm btn-outline-white my-0" type="submit" name="submit">Sign Up</button> 
+                                </div> 
+                              </form> 
+                          </div> 
+                        </div> 
+                    </div>
     <?php
     include_once 'Header.php';
+    function validateemail()   
+{   
+    var x=document.Newsletter.email.value;   
+var atposition=x.indexOf("@");   
+var dotposition=x.lastIndexOf(".");   
+if (atposition<1  dotposition<atposition+2  dotposition+2>=x.length){   
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);   
+  return false;   
+  }   
+} 
     ?>
 
     <div class="content">
