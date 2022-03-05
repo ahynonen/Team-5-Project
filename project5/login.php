@@ -36,10 +36,7 @@ session_start();
 			 <p id="demo"></p>
 
         </form>
-    </div>
-
-	<?php 
-    include 'Footer.php';
+        <?php 
 
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
@@ -60,6 +57,11 @@ session_start();
 
     include 'Footer.php';
     ?>
+    </div>
+    <?php 
+    include 'Footer.php';
+    ?>
+	
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "You will log in now";
