@@ -23,29 +23,17 @@ include_once 'Header.php';
             <h1>Welcome among us!</h1>
             <h3>we are happy to have you here :) you want to hear from us more ? </h3>
             <h3>SIGN UP FOR NEWSLETTER</h3>
-    <form class="input-group" name=Newsletter method="post" action="#" onsubmit="return validateemail();">
-        <label>Email</label>
-        <input type="Email" class="form-control form-control-sm" placeholder="Enter your email..." name="Email" aria-label="Your Email" aria-describedby="basic-addon2">
+            <form class="input-group" name=Newsletter method="post" action="#" onsubmit="return validateemail();">
+                <label>Email</label>
+                <input type="Email" class="form-control form-control-sm" placeholder="Enter your email..." name="Email" aria-label="Your Email" aria-describedby="basic-addon2">
 
-        <div class="input-group-append">
-            <button class="btn btn-sm btn-outline-white my-0" type="submit" name="submit">Sign Up *,*</button>
+                <div class="input-group-append">
+                    <button class="btn btn-sm btn-outline-white my-0" type="submit" name="submit">Sign Up *,*</button>
+                </div>
+            </form>
         </div>
-    </form>
-        </div>
+
         <div class="div-big-logo"><img class="big-logo" src="images/AMW-white.png" alt="AMW White logo"></div>
-
-    </div>
-    <script>
-        function validateemail() {
-            var x = document.Newsletter.Email.value;
-            var atposition = x.indexOf("@");
-            var dotposition = x.lastIndexOf(".");
-            if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
-                alert("Please enter a valid e-mail address \n atpostion:" + atposition + "\n dotposition:" + dotposition);
-                return false;
-            }
-        }
-    </script>
 
     </div>
     <?php
@@ -60,6 +48,20 @@ include_once 'Header.php';
         }
     }
     ?>
+    <script>
+        function validateemail() {
+            var x = document.Newsletter.Email.value;
+            var atposition = x.indexOf("@");
+            var dotposition = x.lastIndexOf(".");
+            if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+                alert("Please enter a valid e-mail address \n atpostion:" + atposition + "\n dotposition:" + dotposition);
+                return false;
+            }
+        }
+    </script>
+
+    </div>
+
     <?php
 
     include 'Footer.php';
