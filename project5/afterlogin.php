@@ -22,13 +22,13 @@ include_once 'Header.php';
         <div class="titles">
             <h1>Welcome among us!</h1>
             <h3>we are happy to have you here :) you want to hear from us more ? </h3>
-            <h4>SIGN UP FOR NEWSLETTER</h4>
+            <h3>SIGN UP FOR NEWSLETTER</h3>
     <form class="input-group" name=Newsletter method="post" action="#" onsubmit="return validateemail();">
         <label>Email</label>
         <input type="Email" class="form-control form-control-sm" placeholder="Enter your email..." name="Email" aria-label="Your Email" aria-describedby="basic-addon2">
 
         <div class="input-group-append">
-            <button class="btn btn-sm btn-outline-white my-0" type="submit" name="submit">Sign Up</button>
+            <button class="btn btn-sm btn-outline-white my-0" type="submit" name="submit">Sign Up *,*</button>
         </div>
     </form>
         </div>
@@ -37,7 +37,7 @@ include_once 'Header.php';
     </div>
     <script>
         function validateemail() {
-            var x = document.Newsletter.email.value;
+            var x = document.Newsletter.Email.value;
             var atposition = x.indexOf("@");
             var dotposition = x.lastIndexOf(".");
             if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
@@ -48,22 +48,20 @@ include_once 'Header.php';
     </script>
 
     </div>
-    </div>
-    </div>
-
     <?php
     if (isset($_POST['submit'])) {
         $Email = $_POST['Email'];
         $sql = "INSERT INTO Newsletter (Email) values ('$Email')";
-        $result = mysqli_query($con, $sql);
+        $result = mysqli_query($conn, $sql);
         if ($result) {
-            echo "You are now subscribed";
+            echo "Subscribed successfully!You will hear from us soon";
         } else {
-            die(mysqli_error($con));
+            die(mysqli_error($conn));
         }
     }
     ?>
     <?php
+
     include 'Footer.php';
     ?>
 </body>
