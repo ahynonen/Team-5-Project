@@ -42,7 +42,7 @@ include_once 'Header.php';
         $sql = "INSERT INTO Newsletter (Email) values ('$Email')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
-            echo "Subscribed successfully!You will hear from us soon";
+            echo "<script> alert(' Subscribed successfully!You will hear from us soon') </script>";
         } else {
             die(mysqli_error($conn));
         }

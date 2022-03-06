@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Newsletter` (
   `Email` varchar(100) NOT NULL,
-  `Status` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `Status` varchar(100) CHARACTER SET utf8mb4  DEFAULT NULL
+) ENGINE=InnoDB DEFAULT ;
 
 --
 -- Dumping data for table `Newsletter`
