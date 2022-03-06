@@ -25,11 +25,11 @@ session_start();
         </div>
         <form class="form-control" action="" method="post">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="" name="email"/>
+            <input id="email" type="email" placeholder="Enter your email .. " name="email"/>
             <small>Error message</small>
             <div class="form-control">
                 <label for="password">Password</label>
-                <input id="password" type="password" placeholder="" name="password"/>
+                <input id="password" type="password" placeholder=" Enter your password .." name="password"/>
                 <small>Error message</small>
             </div>
              <button onclick="myFunction()">Login</button>
@@ -62,7 +62,7 @@ session_start();
 	
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "You will log in now";
+  document.getElementById("demo").innerHTML = "wait a moment";
 }
 </script>
 </body>
