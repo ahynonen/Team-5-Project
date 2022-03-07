@@ -1,6 +1,7 @@
+
 <?php 
 include 'db.php';
-include_once 'header.php';
+include_once 'Header.php';
 ?>
 <?php 
 $fname= $_POST['fname'];
@@ -13,8 +14,9 @@ $sql="insert into users (fname, lname, email, pwd)
 values('$fname', '$lname', '$email', '$pwd')";
 
 if($conn->query($sql) === TRUE) {
-    echo "Account created Successfully. Please ";
+   
     echo "<a href='login.php?' class='top'>Login </a>";
+    echo "<p class=\"try\"> Account created Successfully. Please:</p>";
   
 }
 else
@@ -24,6 +26,6 @@ else
 $conn->close();
 
 
-include_once 'footer.php';
+include_once 'Footer.php';
 
 ?>
