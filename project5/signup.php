@@ -19,7 +19,7 @@ session_start();
 
 <body>
 <?php
-include_once 'header.php';
+include_once 'Header.php';
 ?>
  
 <div class="container">     
@@ -119,7 +119,7 @@ include_once 'header.php';
 
 
     <?php
-include_once 'footer.php';
+include_once 'Footer.php';
 ?>
 
 

@@ -1,12 +1,12 @@
 <?php 
 include 'db.php';
-include_once 'header.php';
+include_once 'Header.php';
 ?>
 <?php 
 $fname= $_POST['fname'];
 $lname= $_POST['lname'];
 $email= $_POST['email'];
-$pwd= $_POST['password'];
+$password= $_POST['password'];
 
 //insert Data into mysql database
 $sql="insert into users (fname, lname, email, password)
@@ -24,6 +24,6 @@ else
 $conn->close();
 
 
-include_once 'footer.php';
+include_once 'Footer.php';
 
 ?>
