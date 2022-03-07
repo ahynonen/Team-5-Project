@@ -1,7 +1,7 @@
 
 <?php 
 include 'db.php';
-include_once 'header.php';
+include_once 'Header.php';
 ?>
 <?php 
 $fname= $_POST['fname'];
@@ -26,6 +26,6 @@ else
 $conn->close();
 
 
-include_once 'footer.php';
+include_once 'Footer.php';
 
 ?>
