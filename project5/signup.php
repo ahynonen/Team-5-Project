@@ -1,25 +1,5 @@
-<?php include 'db.php'; 
-session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    
-    
-    <link rel="stylesheet" href="signup.css"/>
-    <link rel="stylesheet" href="css.css"/>
-</head>
-
-<body>
 <?php
-include_once 'Header.php';
+include_once 'header.php';
 ?>
  
 <div class="container">     
@@ -50,13 +30,13 @@ include_once 'Header.php';
 		</div>
 		<div class="form-control">
 			<label for="pwd">Password</label>
-			<input type="password" size="65" name = "password"  id="password" />
+			<input type="password" size="65" name = "pwd"  id="pwd" />
 			
 			
 		</div>
 		<div class="form-control">
-			<label for="password2">Confirm Password</label>
-			<input type="password" size="65" id="password2"  />
+			<label for="pwd2">Confirm Password</label>
+			<input type="password" size="65" id="pwd2"  />
 			
 			
 		</div>
@@ -76,8 +56,8 @@ include_once 'Header.php';
         var fname = document.forms["RegForm"]["fname"];
 		var lname = document.forms["RegForm"]["lname"];
         var email = document.forms["RegForm"]["email"];
-        var pwd = document.forms["RegForm"]["password"];
-		var pwd2 = document.forms["RegForm"]["password2"];
+        var pwd = document.forms["RegForm"]["pwd"];
+		var pwd2 = document.forms["RegForm"]["pwd2"];
         
   
         if (fname.value == "") {
@@ -99,19 +79,19 @@ include_once 'Header.php';
         }
   
   
-        if (password.value == "") {
+        if (pwd.value == "") {
             window.alert("Please enter your password");
-            password.focus();
+            pwd.focus();
             return false;
         }
 
-		if (password2.value == "") {
+		if (pwd2.value == "") {
             window.alert("Please confirm your password");
-            password2.focus();
+            pwd2.focus();
             return false;
-        } else if (password.value !== password2.value){
+        } else if (pwd.value !== pwd2.value){
 			window.alert("Your password doesn't match");
-            password2.focus();
+            pwd2.focus();
 			return false;
 		}
     }
@@ -119,7 +99,7 @@ include_once 'Header.php';
 
 
     <?php
-include_once 'Footer.php';
+include_once 'footer.php';
 ?>
 
 

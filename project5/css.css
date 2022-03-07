@@ -15,6 +15,20 @@
 	align-items: center;
 }
 
+.top {
+	position: relative;
+	top: 10%;
+	left: 58%;
+	color: #cccccc;
+}
+
+.try{
+	
+	color: #446b81;
+	position: relative;
+	right: 43%;
+}
+
 
 .header {
 	border-bottom: 1px solid #373883;
@@ -112,9 +126,14 @@
 }
 
 
-.term h5{
-	display: grid;
-	place-items: center;
-	
-}
 
+.text-login h5 {
+
+
+	position: absolute;
+	color: #cccccc;
+	font-size: 20px;
+	left: 43%;
+	bottom: -4%;
+
+}
