@@ -6,11 +6,11 @@ include_once 'header.php';
 $fname= $_POST['fname'];
 $lname= $_POST['lname'];
 $email= $_POST['email'];
-$pwd= $_POST['pwd'];
+$pwd= $_POST['password'];
 
 //insert Data into mysql database
-$sql="insert into users (fname, lname, email, pwd)
-values('$fname', '$lname', '$email', '$pwd')";
+$sql="insert into users (fname, lname, email, password)
+values('$fname', '$lname', '$email', '$password')";
 
 if($conn->query($sql) === TRUE) {
     echo "Account created Successfully. Please ";
