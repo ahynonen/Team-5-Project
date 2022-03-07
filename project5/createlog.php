@@ -3,7 +3,7 @@ include 'db.php';
 $fname= $_POST['fname'];
 $lname= $_POST['lname'];
 $email= $_POST['email'];
-$pwd= $_POST['pwd'];
+$pwd= $_POST['password'];
 
 if (empty($_POST['email'])) {
     echo "<h1>Please input your Email Address</h1>";
